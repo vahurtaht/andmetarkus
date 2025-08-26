@@ -1,0 +1,2 @@
+# andmetarkus
+Kursuse  Andmetarkus materjalid
