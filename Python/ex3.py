@@ -24,9 +24,11 @@ else:
     print(f"Muutuja väärtus {number_to_check} on üle 100")
 
 #Kas täiskasvanud
-if is_adult := age >= 18:
-    print(f"kas isik on täiskasvanud {is_adult}")
-if age >= 18
-    print(f"Isik on täiskasvanud")
+is_adult = age >= 18
+print(f"Kas isik on täiskasvanud? {is_adult}")
 
-    
+if age >= 18:
+    print("Isik on täiskasvanud")
+else:
+    print("Isik ei ole täiskasvanud")
+
