@@ -27,3 +27,4 @@ initials = first_name[:2] + surname[:2]
 print(initials)
 
 print(age * first_name)
+
