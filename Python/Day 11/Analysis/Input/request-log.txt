@@ -1,3 +1,1 @@
-1. Esimene rida
-2. Teine rida
-3. Kolmas rida
+Hello World

@@ -14,6 +14,12 @@ request_log_entries = filecontent.split("\n")
 for line in request_log_entries:
     print(line + "\n")
 
+row_count = len(request_log_entries)
+print("Ridade arv on: " + str(row_count))
+
+with open("request-log.txt", "w") as f:
+    f.write("Hello World")
+
 
 if __name__ == "__main__":
     main()
