@@ -1,24 +1,29 @@
+from file_functions import FileFunctions
+
+
 def main():
-    print("Hello, Andmetarkus 2025!")
 
-# Siia hakkame lisama koodi, millega testime loodud funktsioone.
+    file_path = "C:\\Users\\user\\Documents\\Github\\andmetarkus\\Python\\Day 11\\Analysis\\request-log.txt"
+    
+    
 
+    # filecontent = ""
 
-with open("request-log.txt", encoding='utf-8') as f:
-    filecontent = f.read()
-print(filecontent)
+    # with open(file_path, encoding='utf-8') as f:
+    #     filecontent = f.read()
 
-request_log_entries = filecontent.split("\n")
+    # request_log_entries = filecontent.split("\n")
 
+    request_log_entries = FileFunctions().read_file(file_path)
 
-for line in request_log_entries:
-    print(line + "\n")
+    for line in request_log_entries:
+        print(line + "\n")
 
-row_count = len(request_log_entries)
-print("Ridade arv on: " + str(row_count))
+    row_count = len(request_log_entries)
+    print(f"Logifailis on {row_count} rida.")
 
-with open("request-log.txt", "w") as f:
-    f.write("Hello World")
+    FileFunctions().add_line_to_file(
+        file_path, f"Logifailis on {row_count} rida.")
 
 
 if __name__ == "__main__":
